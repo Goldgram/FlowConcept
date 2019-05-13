@@ -1,5 +1,6 @@
 const animationColor = [
-  '#fcfc4d', '#5657fb', '#22baa7', '#f8c6dd', '#ffffff'
+  // '#fcfc4d', '#5657fb', '#22baa7', '#f8c6dd', '#ffffff'
+  '#fcfc4d', '#5140dc', '#22baa7', '#f8c6dd', '#ffffff'
 ];
 const animationText = [
   'Create', 'Move', 'Taste', 'Relax', 'Flow'
