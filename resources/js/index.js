@@ -9,6 +9,8 @@ const animationInterval = [
   1000, 1000, 1000, 1000, 5000
 ];
 
+const shouldAnimate = document.getElementById('home-animation');
+
 const changeAnimation = (num) => () => {
   document.getElementById('home-animation').style.backgroundColor = animationColor[num];
   document.getElementById('home-animation-text').innerText = animationText[num];
@@ -18,9 +20,24 @@ const changeAnimation = (num) => () => {
 
 (() => {
   const windowheight = window.innerHeight || 800;
-  document.getElementById('home-animation').style.height = windowheight + 'px';
+  if (shouldAnimate) {
+    document.getElementById('home-animation').style.height = windowheight + 'px';
+  }
 })();
 
 window.onload = () => {
-  setTimeout(changeAnimation(0), 500);
+  if (shouldAnimate) {
+    setTimeout(changeAnimation(0), 500);
+  }
+}
+
+const clickRadio = (num) => {
+  const elements = document.getElementsByClassName('order-radio');
+  for (var i = 0; i < 4; i++) {
+    if (num === i) {
+      elements[i].classList.add('selected');
+    } else {
+      elements[i].classList.remove('selected');
+    }
+  }
 }
