@@ -1,19 +1,18 @@
 const animationColor = [
-  // '#fcfc4d', '#5657fb', '#22baa7', '#f8c6dd', '#ffffff'
-  '#fcfc4d', '#5140dc', '#22baa7', '#f8c6dd', '#ffffff'
+  '#fcfc4d', '#5140dc', '#22baa7', '#fcb6d9', '#ffffff'
 ];
 const animationText = [
-  'Create', 'Move', 'Taste', 'Relax', 'Flow'
+  'Create', '<span class="m">M</span>ove', 'Taste', 'Relax', 'F<span class="l">l</span>ow'
 ];
 const animationInterval = [
-  1000, 1000, 1000, 1000, 5000
+  500, 500, 500, 500, 3000
 ];
 
 const shouldAnimate = document.getElementById('home-animation');
 
 const changeAnimation = (num) => () => {
   document.getElementById('home-animation').style.backgroundColor = animationColor[num];
-  document.getElementById('home-animation-text').innerText = animationText[num];
+  document.getElementById('home-animation-text').innerHTML = animationText[num];
   const nextNum = num === 4 ? 0 : num + 1;
   setTimeout(changeAnimation(nextNum), animationInterval[num]);
 }

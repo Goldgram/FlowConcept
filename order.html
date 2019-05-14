@@ -7,7 +7,7 @@
     <meta name="keywords" content="Flow, Word, Word">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/fmx0oiz.css">
   </head>
@@ -16,7 +16,7 @@
     <header>
       <div class="container flex-space">
         <a href="./index.html">
-          <div class="header-text">Flow</div>
+          <div class="header-text solid">Flow</div>
         </a>
         <div class="flex">
           <a href="./howitworks.html">
@@ -30,24 +30,39 @@
     </header>
 
     <main>
-      <div class="blue margin-top-60 padding-top-60 padding-bottom-60">
+      <div class="green margin-top-60 padding-top-60 padding-bottom-60">
         <div class="container">
-          <div class="order-title">Choose one of our box types:</div>
-          <div class="order-item flex-center order-radio selected" onclick="clickRadio(0)">
-            <div class='icon'></div>
-            <div class='text'>Move</div>
+          <div class="flex-space-baseline">
+            <div class="order-title">Choose one of our box types</div>
+            <div class="order-per-month">per month</div>
           </div>
-          <div class="order-item flex-center order-radio" onclick="clickRadio(1)">
-            <div class='icon'></div>
-            <div class='text'>Relax</div>
+          <div class="order-item flex-space-center order-radio selected" onclick="clickRadio(0)">
+            <div class="flex-center">
+              <div class='icon'></div>
+              <div class='text'>Move</div>
+            </div>
+            <div class='price'><span>€</span>20</div>
           </div>
-          <div class="order-item flex-center order-radio" onclick="clickRadio(2)">
-            <div class='icon'></div>
-            <div class='text'>Create</div>
+          <div class="order-item flex-space-center order-radio" onclick="clickRadio(1)">
+            <div class="flex-center">
+              <div class='icon'></div>
+              <div class='text'>Relax</div>
+            </div>
+            <div class='price'><span>€</span>18</div>
           </div>
-          <div class="order-item flex-center order-radio" onclick="clickRadio(3)">
-            <div class='icon'></div>
-            <div class='text'>Taste</div>
+          <div class="order-item flex-space-center order-radio" onclick="clickRadio(2)">
+            <div class="flex-center">
+              <div class='icon'></div>
+              <div class='text'>Create</div>
+            </div>
+            <div class='price'><span>€</span>21</div>
+          </div>
+          <div class="order-item flex-space-center order-radio" onclick="clickRadio(3)">
+            <div class="flex-center">
+              <div class='icon'></div>
+              <div class='text'>Relax</div>
+            </div>
+            <div class='price'><span>€</span>24</div>
           </div>
         </div>
       </div>
@@ -56,43 +71,58 @@
         <div class="container">
           <div class="order-title">Tell us about you?</div>
           <div class="order-item">
-            <input type="text" class="input-yellow" placeholder="Your Name">
+            <input type="text" class="input-yellow" placeholder="First Name">
           </div>
           <div class="order-item">
-            <input type="text" class="input-yellow" placeholder="Road">
+            <input type="text" class="input-yellow" placeholder="Last Name">
           </div>
           <div class="order-item">
-            <input type="text" class="input-yellow" placeholder="Town">
-          </div>
-          <div class="order-item">
-            <input type="text" class="input-yellow" placeholder="Country">
-          </div>
-          <div class="order-item">
-            <input type="text" class="input-yellow" placeholder="Post Code">
+            <input type="text" class="input-yellow" placeholder="Email">
           </div>
         </div>
       </div>
 
-      <div class="green padding-top-60 padding-bottom-60">
+      <div class="blue padding-top-60 padding-bottom-60">
+        <div class="container">
+          <div class="order-title">Where do you live?</div>
+          <div class="order-item">
+            <input type="text" class="input-blue" placeholder="Road">
+          </div>
+          <div class="order-item">
+            <input type="text" class="input-blue" placeholder="Town">
+          </div>
+          <div class="order-item">
+            <input type="text" class="input-blue" placeholder="County">
+          </div>
+          <div class="order-item">
+            <input type="text" class="input-blue" placeholder="Post Code">
+          </div>
+        </div>
+      </div>
+
+      <div class="pink padding-top-60 padding-bottom-60">
         <div class="container">
           <div class="order-title">Payment Details</div>
           <div class="order-item">
-            <input type="text" class="input-green" placeholder="Name">
+            <input type="text" class="input-pink" placeholder="Name">
           </div>
           <div class="order-item">
-            <input type="text" class="input-green" placeholder="Card Number">
+            <input type="text" class="input-pink" placeholder="Card Number">
           </div>
           <div class="order-item">
-            <input type="text" class="input-green" placeholder="Security Code">
+            <input type="text" class="input-pink" placeholder="Security Code">
           </div>
           <div class="order-item">
-            <input type="text" class="input-green" placeholder="Expirary Date">
+            <input type="text" class="input-pink" placeholder="Expirary Date">
           </div>
         </div>
       </div>
 
       <a href="./welcome.html">
-        <div class="container text-link">Order →</div>
+        <div class="container text-link padding-top-30">
+          O<span class="r">r</span>der
+          <img src="resources/images/arrow.svg">
+        </div>
       </a>
     </main>
 
