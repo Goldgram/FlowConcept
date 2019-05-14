@@ -217,8 +217,12 @@ main {
 }
 .order-item {
   border-top: 1px solid #000000;
-  padding-top: 8px;
+  padding-top: 3px;
   padding-bottom: 8px;
+}
+.order-item.with-extra-padding {
+  padding-top: 8px;
+  /* padding-bottom: 8px; */
 }
 .order-radio {
   cursor: pointer;
@@ -254,7 +258,10 @@ main {
   border-width: 0;
   width: 100%;
   font-size: 90px;
-  line-height: 88px;
+  height: 89px;
+  padding-bottom: 10px;
+  letter-spacing: -2px;
+  font-family:"Neue Haas Unica W06 Regular";
 }
 .input-blue::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #4138ad;
