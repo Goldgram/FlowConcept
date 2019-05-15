@@ -104,8 +104,8 @@ a {
 .vh100-60 {
   min-height: calc(100vh - 60px);
 }
-.vh100-180 {
-  min-height: calc(100vh - 180px);
+.vh100-160 {
+  min-height: calc(100vh - 160px);
 }
 
 header {
