@@ -1,5 +1,5 @@
 const animationColor = [
-  '#fcfc4d', '#5140dc', '#22baa7', '#fcb6d9', '#ffffff'
+  '#fcfc4d', '#22baa7', '#5140dc', '#fcb6d9', '#ffffff'
 ];
 const animationText = [
   'Create', '<span class="m">M</span>ove', 'Taste', 'Relax', 'F<span class="l">l</span>ow'

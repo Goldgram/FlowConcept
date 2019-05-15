@@ -186,7 +186,7 @@ main {
   background-color: #2eb8a8;
   background-image: url('../images/green-2.jpg');
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: bottom right;
   background-size: 100% auto;
 }
 .yellow {
