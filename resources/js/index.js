@@ -17,13 +17,6 @@ const changeAnimation = (num) => () => {
   setTimeout(changeAnimation(nextNum), animationInterval[num]);
 }
 
-(() => {
-  const windowheight = window.innerHeight || 800;
-  if (shouldAnimate) {
-    document.getElementById('home-animation').style.height = windowheight + 'px';
-  }
-})();
-
 window.onload = () => {
   if (shouldAnimate) {
     setTimeout(changeAnimation(0), 500);

@@ -51,9 +51,13 @@ a {
 }
 .flex-space-baseline {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: baseline;
+}
+.flex-space-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .margin-left-40 {
   margin-left: 40px;
@@ -88,6 +92,15 @@ a {
 .text-link.with-border {
   border-top: 1px solid #000000;
 }
+.vh100 {
+  min-height: 100vh;
+}
+.vh100-60 {
+  min-height: calc(100vh - 60px);
+}
+.vh100-180 {
+  min-height: calc(100vh - 180px);
+}
 
 header {
   position: fixed;
@@ -118,8 +131,6 @@ main {
 }
 
 #home-animation {
-  /* background-color: green; */
-  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,9 +148,9 @@ main {
 .home-copy {
   font-size: 60px;
   line-height: 68px;
-  padding-top: 40px;
-  padding-bottom: 200px;
+  padding-top: 60px;
   padding-right: 50px;
+  padding-bottom: 60px;
 }
 
 .blue {
@@ -317,7 +328,9 @@ main {
 }
 .welcome-text {
   font-size: 60px;
-  line-height: 60px;
+  line-height: 68px;
+  padding-right: 15%;
+  padding-bottom: 40px;
 }
 
 footer {
