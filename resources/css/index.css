@@ -89,8 +89,8 @@ a {
 .padding-right-40pc {
   padding-right: 40%;
 }
-.padding-right-42pc {
-  padding-right: 42%;
+.padding-right-really-specific {
+  padding-right: 43.5%;
 }
 
 .text-link {
