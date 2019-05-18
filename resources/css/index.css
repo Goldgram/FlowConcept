@@ -83,9 +83,16 @@ a {
 .padding-left-40pc {
   padding-left: 40%;
 }
+.padding-left-44pc {
+  padding-left: 44%;
+}
 .padding-right-40pc {
   padding-right: 40%;
 }
+.padding-right-42pc {
+  padding-right: 42%;
+}
+
 .text-link {
   font-size: 90px;
   line-height: 96px;
@@ -164,7 +171,7 @@ main {
 }
 .grey-background {
   background-color: #e5e5e3;
-  background-image: url('../images/grey-2.jpg');
+  background-image: url('../images/grey-3.jpg');
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 100% auto;
