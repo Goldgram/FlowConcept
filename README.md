@@ -1,3 +1,3 @@
 # FlowConcept
 
-A basic site made for a friend's college project.
+A very basic site made for a friend's college project.
